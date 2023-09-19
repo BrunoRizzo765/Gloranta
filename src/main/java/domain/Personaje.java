@@ -11,13 +11,13 @@ public class Personaje {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    @ManyToMany
     @Convert
+    @Column(name = "elementos")
     private List<ElementoDefensor> elementos;
-    @Column
+    @Column(name = "stamina")
     private int stamina;
-    @Column
-    private int puntodeVida;
+    @Column(name = "puntoDeVida")
+    private int puntoDeVida;
 
     public void atacar(Personaje personaje){
         return;

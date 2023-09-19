@@ -7,9 +7,9 @@ import javax.persistence.Entity;
 @Entity
 @DiscriminatorValue("ladron")
 public class Ladron extends Personaje {
-    @Column
+    @Column(name = "nivelSiniestro")
     private int nivelSiniestro;
-    @Column
+    @Column(name = "tieneNavaja")
     private boolean tieneNavaja;
 
 

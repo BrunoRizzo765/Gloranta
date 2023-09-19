@@ -5,8 +5,8 @@ import javax.persistence.*;
 @Entity
 @DiscriminatorValue("mago")
 public class Mago extends Personaje{
-    @Column
+    @Column(name = "nivelDeMagia")
     private int nivelDeMagia;
-    @Column
+    @Column(name = "tieneAlas")
     private  boolean tieneAlas;
 }
