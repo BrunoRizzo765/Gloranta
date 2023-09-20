@@ -16,7 +16,7 @@ public class Jugador {
     @Column(name = "nombre")
     private String nombre;
     @OneToOne
-    @Column(name = "personaje")
+    @Column(name = "id_personaje")
     private Personaje personaje;
 
     public void cambiarPersonaje(Personaje p){return;}

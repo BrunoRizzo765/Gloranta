@@ -16,8 +16,8 @@ public class Personaje {
     private List<ElementoDefensor> elementos;
     @Column(name = "stamina")
     private int stamina;
-    @Column(name = "puntoDeVida")
-    private int puntoDeVida;
+    @Column(name = "puntosDeVida")
+    private int puntosDeVida;
 
     public void atacar(Personaje personaje){
         return;
